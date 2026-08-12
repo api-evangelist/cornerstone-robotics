@@ -1,0 +1,68 @@
+generated: '2026-08-11'
+method: probed
+source: live HTTP probes of every host named in apis.yml
+note: >-
+  Recorded absence. No /.well-known/ document is served on any Cornerstone Robotics
+  host. Every discovery path either 404s into the site's HTML not-found page or
+  returns a 500 with an empty body (the CMS errors on dot-prefixed path segments
+  rather than 404ing them). Nothing here returned a real document, so NO WellKnown
+  or SecurityTxt pointer is emitted in apis.yml — this file documents an absence,
+  not a presence.
+hosts:
+- host: https://www.csrbtx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 500
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 500
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 500
+    file: null
+  - path: /.well-known/agent.json
+    status: 500
+    file: null
+- host: https://en.csrbtx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 500
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 500
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 500
+    file: null
+  - path: /.well-known/agent.json
+    status: 500
+    file: null
+summary:
+  hosts_probed: 2
+  paths_probed: 16
+  documents_found: 0
+  agent_card_found: false

@@ -1,17 +1,35 @@
 aid: cornerstone-robotics
 name: Cornerstone Robotics
-description: 'Cornerstone Robotics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Cornerstone Robotics (CSR) is a Hong Kong-headquartered surgical robotics
+  manufacturer founded in 2019 at Hong Kong Science Park, building the Sentire Endoscopic
+  Surgical System (C1000) — a multi-specialty, minimally invasive robot-assisted surgery
+  platform developed entirely in-house and indicated for general surgery, gynecology,
+  thoracic and urology. The Sentire system has received regulatory clearance in China
+  (NMPA), the European Union and Singapore, and has completed multicenter clinical
+  trials in China and the United Kingdom. The company operates three global R&D hubs,
+  six business centers and a 30,000 square meter manufacturing facility, and sells a
+  regulated physical medical device rather than software: it publishes no developer
+  portal, no public API, no SDKs and no machine-readable specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/cornerstone-robotics/refs/heads/main/apis.yml
+image: https://en.csrbtx.com/static/home/svg/LOGO.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-11'
 modified: '2026-08-11'
 tags:
 - Company
+- Robotics
+- Surgical Robotics
+- Medical Devices
+- Healthcare
+- Health
+- Medical Technology
+- Minimally Invasive Surgery
+- Hong Kong
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,73 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cornerstone-robotics-domain-security.yml
+- type: LLMsTxt
+  url: llms/cornerstone-robotics-llms.txt
 - type: Website
-  url: https://www.hiive.com/securities/cornerstone-robotics-stock
+  url: https://www.csrbtx.com/
+- type: Website
+  name: English site
+  url: https://en.csrbtx.com/
+- type: About
+  url: https://en.csrbtx.com/about-us
+- type: Product
+  name: Sentire Endoscopic Surgical System
+  url: https://en.csrbtx.com/sentire
+- type: Support
+  url: https://en.csrbtx.com/contact-us
+- type: News
+  url: https://en.csrbtx.com/news
+- type: PressRelease
+  url: https://en.csrbtx.com/press-release
+- type: Events
+  url: https://en.csrbtx.com/events
+- type: Careers
+  url: https://en.csrbtx.com/join-us
+- type: Training
+  name: Professional Education
+  url: https://en.csrbtx.com/professional-education
+- type: GitHubOrganization
+  url: https://github.com/CornerstoneRobotics
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cornerstone-robotics-limited/
+- type: TermsOfService
+  url: https://en.csrbtx.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://en.csrbtx.com/privacy-policy
+- type: CookiePolicy
+  url: https://en.csrbtx.com/cookies-policy
+- type: WhistleblowingPolicy
+  url: https://en.csrbtx.com/whistleblowing-policy
+- type: SiteMap
+  url: https://en.csrbtx.com/sitemap
+x-enrichment:
+  date: '2026-08-11'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Cornerstone Robotics sells the Sentire endoscopic surgical robot as a regulated
+    physical medical device — the whole 41-page csrbtx.com sitemap is product,
+    clinical, news, careers and policy pages with no developer section, and
+    api/developer/docs/portal subdomains do not resolve at all.
+  evidence:
+  - url: https://en.csrbtx.com/sitemap.xml
+    status: 200
+  - url: https://en.csrbtx.com/openapi.json
+    status: 500
+  - url: https://en.csrbtx.com/api-docs
+    status: 404
+  - url: https://en.csrbtx.com/graphql
+    status: 404
+  - url: https://en.csrbtx.com/.well-known/agent-card.json
+    status: 500
+  - url: https://en.csrbtx.com/.well-known/api-catalog
+    status: 404
+  - url: https://api.github.com/orgs/CornerstoneRobotics
+    status: 200
+  checked: '2026-08-11'

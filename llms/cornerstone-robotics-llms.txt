@@ -1,0 +1,52 @@
+# Cornerstone Robotics
+
+> Cornerstone Robotics (CSR) is a Hong Kong-headquartered surgical robotics manufacturer founded in 2019 at Hong Kong Science Park. It builds the Sentire Endoscopic Surgical System (C1000), a multi-specialty minimally invasive robot-assisted surgery platform developed in-house and indicated for general surgery, gynecology, thoracic and urology. Sentire holds regulatory clearance in China (NMPA), the European Union (CE/MDR) and Singapore (HSA).
+
+## API surface
+
+Cornerstone Robotics publishes **no public API**. As of 2026-08-11 there is no developer portal,
+no API reference, no OpenAPI/AsyncAPI/GraphQL specification, no SDK or client library on any public
+package registry, no MCP server, no A2A agent card, and no `/.well-known/` discovery document on any
+company host. The product is a regulated physical medical device sold through a direct sales and
+clinical-service motion, not a software platform. This is an honest zero, not a gap in our research —
+see `x-coverage` in `apis.yml` for the probes that establish it.
+
+## Company
+
+- [Cornerstone Robotics (Chinese)](https://www.csrbtx.com/): Primary corporate site.
+- [Cornerstone Robotics (English)](https://en.csrbtx.com/): English corporate site.
+- [Company](https://en.csrbtx.com/about-us): Founding, mission, R&D hubs, manufacturing footprint.
+- [Contact Us](https://en.csrbtx.com/contact-us): Regional sales and support contacts (APAC, EU, HK, UK).
+- [Careers](https://en.csrbtx.com/join-us): Open roles.
+- [Site Map](https://en.csrbtx.com/sitemap): Full page index.
+
+## Product
+
+- [Sentire Endoscopic Surgical System](https://en.csrbtx.com/sentire): The company's surgical robot platform.
+- [Innovation](https://en.csrbtx.com/innovation): Proprietary technology and R&D approach.
+- [Quality Innovation](https://en.csrbtx.com/quality-innovation): Quality management posture.
+- [About Robotic Surgery](https://en.csrbtx.com/robotic-surgery): Clinical background on robot-assisted surgery.
+- [Professional Education](https://en.csrbtx.com/professional-education): Surgeon training and clinical education.
+
+## News
+
+- [News](https://en.csrbtx.com/news): Company news index.
+- [Press Release](https://en.csrbtx.com/press-release): Official press releases.
+- [Events](https://en.csrbtx.com/events): Conference and event appearances.
+
+## Policies
+
+- [Terms of Use](https://en.csrbtx.com/terms-of-use)
+- [Privacy Policy](https://en.csrbtx.com/privacy-policy)
+- [Cookies Policy](https://en.csrbtx.com/cookies-policy)
+- [Whistleblowing Policy](https://en.csrbtx.com/whistleblowing-policy)
+
+## Artifacts
+
+- [Domain security probe](security/cornerstone-robotics-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC observed on company hosts.
+- [Well-known probe](well-known/cornerstone-robotics-well-known.yml): Recorded absence — 16 discovery paths across 2 hosts, zero documents.
+
+## Optional
+
+- [GitHub organization](https://github.com/CornerstoneRobotics): First-party org (`blog: www.csrbtx.com`), zero public repositories as of 2026-08-11.
+- [LinkedIn](https://www.linkedin.com/company/cornerstone-robotics-limited/): Company page.
