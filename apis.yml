@@ -11,6 +11,17 @@ description: 'Cornerstone Robotics (CSR) is a Hong Kong-headquartered surgical r
   regulated physical medical device rather than software: it publishes no developer
   portal, no public API, no SDKs and no machine-readable specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/cornerstone-robotics/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://en.csrbtx.com/static/home/svg/LOGO.svg
 x-type: company
 x-source: harvest:secondary-market
